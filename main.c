@@ -14,8 +14,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <locale.h>
-#include <stdbool.h>
 #include <string.h>
+
 // prototipo funciones
 void vaciarBuffer();
 void limpiarPantalla();
