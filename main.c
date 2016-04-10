@@ -25,6 +25,7 @@ void ingresoPlabra();
 void ingresoClave();
 void cifrar();
 void decifrar();
+
 // variables globales
 char palabra[50];
 char clave[50];
@@ -56,7 +57,7 @@ int validar(char cadena[3]){
 }
 void menu(){
     setlocale(LC_CTYPE, "Spanish");
-    printf("              Cifrado de Vigenére\n");
+    printf("              Cifrado de Vigenére\n\n");
     printf("1.- Cifrar palabra\n");
     printf("2.- Decifrar palabra\n");
     printf("3.- Salir\n");
@@ -151,17 +152,17 @@ int main() {
                     ingresoPlabra();   
                     printf("Ingrese su clave: ");
                     ingresoClave();
-                    printf("\n\n      mensaje cifrado: ");decifrar();printf("\n\n");
+                    printf("\n\n      mensaje decifrado: ");decifrar();printf("\n\n");
                     limpiarPantalla();
                 }if(opcion==3){
                     validacion=1;
                 }if(opcion>3 || opcion<1){
-                    printf("ingrese una opción valida");
+                    printf("ingrese una opción válida");
                     limpiarPantalla();
                 }
                 break;
             default:
-                printf("usted a ingresado letras en opción\n");
+                printf("usted a ingresado letras como opción\n");
                 limpiarPantalla();
                 break;
         }    
